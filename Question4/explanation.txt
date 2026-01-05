@@ -1,0 +1,19 @@
+1. The uptime command displays how long the system has been running since the last boot along with load averages.
+
+2. The ps -u root command lists all processes currently running under the root user account.
+
+3. The top command shows real-time CPU usage and helps identify the process consuming the highest CPU.
+
+4. The sleep command is executed in the background using the & symbol, and the jobs command verifies that it is running.
+
+5. The renice command changes the priority (niceness) of a running process, and ps confirms the updated priority value.
+
+6. The free -h command displays memory usage including total, used, and available memory in a human-readable format.
+
+7. The df -h /root command shows disk space usage of the filesystem where the root home directory resides.
+
+8. The echo $SHELL command displays the name of the shell currently being used.
+
+9. Output redirection (>) is used to store system information from the uname command into system_report.txt.
+
+10. The ncdu tool provides an interactive visual representation of disk usage, helping identify large files and directories.
