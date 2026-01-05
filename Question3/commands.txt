@@ -1,0 +1,28 @@
+# 1. Create file
+echo "Sample data for links" > /root/sample_data.txt
+
+# 2. Hard link
+ln /root/sample_data.txt /root/sample_hard.txt
+
+# 3. Symbolic link
+ln -s /root/sample_data.txt /root/sample_soft.txt
+
+# 4. Inode numbers
+ls -i /root/sample_data.txt /root/sample_hard.txt /root/sample_soft.txt
+
+# 6. File metadata
+ls -l /root/sample_data.txt
+
+# 7. Disk usage of home
+du -sh /root
+
+# 8. File sizes
+ls -lh /root
+
+# 9. Delete symbolic link
+rm /root/sample_soft.txt
+ls /root/sample_data.txt
+
+# 10. Disk utilities
+du -h /root | head
+df -h
