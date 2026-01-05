@@ -1,0 +1,31 @@
+# 1. Create documents directory
+mkdir /root/documents
+
+# 2. Navigate and create plan.txt
+cd /root/documents
+touch plan.txt
+
+# 3. Add content
+echo "Project plan: Finish Linux assignment." > plan.txt
+
+# 4. Check permissions and ownership
+ls -l plan.txt
+
+# 5. Copy file
+cp plan.txt plan_copy.txt
+
+# 6. Rename directory
+cd /root
+mv documents project_documents
+
+# 7. Create archive directory
+mkdir /root/project_documents/archive
+
+# 8. Move copied file
+mv /root/project_documents/plan_copy.txt /root/project_documents/archive/
+
+# 9. Recursive listing
+ls -R /root/project_documents
+
+# 10. Absolute path verification
+realpath /root/project_documents/archive/plan_copy.txt
