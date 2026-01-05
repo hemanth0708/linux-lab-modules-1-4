@@ -1,0 +1,19 @@
+1. The mkdir command creates a new directory named documents inside the root user's home directory to store project-related files.
+
+2. The cd command changes the current working directory to documents, and the touch command creates an empty file named plan.txt.
+
+3. The echo command writes sample text into the plan.txt file using output redirection (>).
+
+4. The ls -l command displays detailed file metadata including permissions, owner, group, size, and timestamp. The owner and group are shown as root.
+
+5. The cp command creates a duplicate of plan.txt named plan_copy.txt.
+
+6. The mv command renames the directory from documents to project_documents to better reflect the project scope.
+
+7. The mkdir command creates a subdirectory named archive inside project_documents.
+
+8. The mv command moves plan_copy.txt into the archive subdirectory for organization.
+
+9. The ls -R command lists all files and subdirectories recursively, showing the complete directory structure.
+
+10. The realpath command displays the absolute path of plan_copy.txt after it has been moved to the archive directory.
