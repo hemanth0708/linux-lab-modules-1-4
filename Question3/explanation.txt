@@ -1,0 +1,19 @@
+1. A file named sample_data.txt is created in the root home directory with sample text content using the echo command.
+
+2. A hard link named sample_hard.txt is created using the ln command. Both files point to the same data on disk.
+
+3. A symbolic (soft) link named sample_soft.txt is created using ln -s. This link points to the file path of sample_data.txt.
+
+4. The ls -i command displays inode numbers. The original file and hard link share the same inode, while the symbolic link has a different inode.
+
+5. Files with the same inode share the same physical data on disk. Hard links share inodes, but symbolic links do not.
+
+6. The ls -l command shows detailed metadata such as permissions, ownership, file size, and timestamps.
+
+7. The du -sh command displays the total disk usage of the root user's home directory in human-readable format.
+
+8. The ls -lh command lists all files in the home directory along with their sizes in a human-readable format.
+
+9. The rm command deletes the symbolic link only. The original file remains unaffected, proving that symbolic links are independent references.
+
+10. The du command shows directory-level disk usage, while the df command displays filesystem-level disk space usage including total, used, and available space.
