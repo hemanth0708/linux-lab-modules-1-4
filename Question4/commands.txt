@@ -1,0 +1,31 @@
+# 1. System uptime
+uptime
+
+# 2. User processes
+ps -u root
+
+# 3. Highest CPU process
+top -u root
+
+# 4. Background process
+sleep 300 &
+jobs
+
+# 5. Change process priority
+renice 5 -p <PID>
+ps -o pid,ni,cmd -p <PID>
+
+# 6. Memory usage
+free -h
+
+# 7. Disk space of home filesystem
+df -h /root
+
+# 8. Current shell
+echo $SHELL
+
+# 9. Output redirection
+uname -a > /root/system_report.txt
+
+# 10. Disk usage visualization
+ncdu /root
