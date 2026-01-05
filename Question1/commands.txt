@@ -1,1 +1,31 @@
 
+1. User Identity Verification
+id
+
+2. Workspace Validation
+pwd
+ls -l
+
+3. Environment Confirmation File
+echo "Linux user environment verified" > user_info.txt
+
+4. File Integrity Check
+wc -c user_info.txt
+
+5. Learning the Tools
+man mkdir
+
+6. Home Directory Inspection
+ls ~
+
+7. Log Investigation
+grep "admin" log.txt
+
+8. System Information Check
+uname -r
+
+9. Network Connectivity Test
+ping www.google.com
+
+10. System Health Awareness
+uptime
